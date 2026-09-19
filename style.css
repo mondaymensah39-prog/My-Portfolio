@@ -1,0 +1,69 @@
+body{
+    background-color: #f0f4ff;
+    font-family: Arial, aans-serif;
+    color: #1a1a2e;
+    margin: 0;
+    padding: 0;
+}
+#hero {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    paddding: 100px 20px;
+    text-align: center;
+}
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+#hero p {
+    font-size: 18px;
+    color: #a0b4d6;
+}
+#About {
+    background-color: #ffffff;
+    paddding: 60px 20px;
+    text-align: center;
+}
+img {
+    width: 200px;
+    height: 200px;
+    border: 4px solid #1a1a2e;
+    border-radius: 1opx;
+}
+#About h2 {
+    font-size: 32px;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+}
+
+#services {
+    background-color: #e8f0fe;
+    padding: 60px 20px;
+    text-align: center;
+}
+#services h2 {
+    font-size: 32px;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+}
+#testimonial {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+#testimonial h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+#testimonial p {
+    font-size: 18px;
+    color: #a0b4d6;
+}
+footer {
+    background-color: #0d0d1a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
