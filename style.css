@@ -1,5 +1,5 @@
-{
-  margin: 0;
+head {
+   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -112,4 +112,49 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+}
+@media (min-width: 600px) {
+  #hero {
+    padding: 80px 40px;
+  
+  }
+   nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    img {
+      width: 250px;
+      height: 250px;
+    }
+    #contact {
+      padding: 60px 40px;
+    }
+    #contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    #contact-form button {
+      align-self: flex-start;
+      padding: 14px 32px;
+    }
+}
+@media (min-width: 900px) {
+   #hero {
+    padding: 120px 60px;
+  }
+  #hero h1 {
+    font-size: 56px;
+  }
+  img {
+    width: 300px;
+    height: 300px;
+  }
+  @About, #services, #testimonial, #contact {
+    padding: 80px 60px;
+  }
+  #contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
