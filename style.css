@@ -73,10 +73,24 @@ section {
   font-style: italic;
   font-size: 16px;
 }
+
+#gallery {
+  background-color: aqua;
+  color: #050236;
+}
+
+#gallery h3 {
+  padding: 20px;
+  margin: 0 15px;
+  font-size: 30px;
+}
+
 #contact {
   background-color: white;
 }
 form {
+  display: flex;
+  flex-direction: column;
   max-width: 500px;
   margin: 0 auto;
   text-align: left;
@@ -113,48 +127,61 @@ footer {
   text-align: center;
   padding: 20px;
 }
-@media (min-width: 600px) {
-  #hero {
-    padding: 80px 40px;
-  
-  }
-   nav {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-    img {
-      width: 250px;
-      height: 250px;
-    }
-    #contact {
-      padding: 60px 40px;
-    }
-    #contact-form {
-      max-width: 500px;
-      margin: 0 auto;
-    }
-    #contact-form button {
-      align-self: flex-start;
-      padding: 14px 32px;
-    }
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
 }
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  align-items: center;
+}
+@media (min-width: 600px) {
+  header { flex-direction: column; }
+  nav ul  { flex-direction: column; }
+}
+
+@media (min-width: 900px)  {
+  header { flex-direction: column;}
+  nav ul { flex-direction: row;}
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (min-width: 900px) {
-   #hero {
-    padding: 120px 60px;
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
-  #hero h1 {
-    font-size: 56px;
-  }
-  img {
-    width: 300px;
-    height: 300px;
-  }
-  @About, #services, #testimonial, #contact {
-    padding: 80px 60px;
-  }
-  #contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-  }
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gallery-grid img {
+  width: 500px;
+  height: 600px;
+  object-fit: fill;
+  border-radius: 8px;
+  border: 2px solid white;
 }
