@@ -189,7 +189,7 @@ nav ul {
 .gallery-grid img {
   width: 200px;
   height: 250px;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 8px;
   border: 2px solid white;
 }
