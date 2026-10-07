@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  overflow: hidden;
+}
 head {
    margin: 0;
   padding: 0;
@@ -165,7 +175,7 @@ nav ul {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 15px;
   max-width: 900px;
   margin: 0 auto;
